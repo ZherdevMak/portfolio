@@ -1,0 +1,19 @@
+.wraper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 45%;
+}
+
+.link {
+    text-decoration: none;
+}
