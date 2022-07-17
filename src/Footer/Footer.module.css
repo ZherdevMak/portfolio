@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c4fff0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 1px solid;
+}
+.NavContainer {
+    width: 70%;
+   background-color: #b2b2b2;
+    height: 120px;
+}
+.title {
+    margin-top: 70px;
+}
+.articleContainer {
+    margin-bottom: 40px;
+}
