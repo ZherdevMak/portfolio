@@ -5,7 +5,7 @@ const Contacts = () => {
     return (
         <div className={stl.wrapper}>
             <div className={stl.container}>
-                <h2 className={stl.title} >Contacts</h2>
+                <h2 className={stl.title}>Contacts</h2>
                 <div className={stl.formContainer}>
                     <form className={stl.form} action="">
                         <input className={stl.input1} type="text"/>

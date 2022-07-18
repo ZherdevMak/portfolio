@@ -14,12 +14,19 @@
     border: 1px solid;
 }
 .NavContainer {
+    display: flex;
+    justify-content: space-between;
     width: 70%;
-   background-color: #b2b2b2;
+    border: 1px solid;
     height: 120px;
 }
 .title {
-    margin-top: 70px;
+    background-color: #b2b2b2;
+}
+.NavElement {
+    width: 20%;
+    height: 120px;
+    background-color: #b2b2b2;
 }
 .articleContainer {
     margin-bottom: 40px;

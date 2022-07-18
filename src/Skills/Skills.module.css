@@ -24,6 +24,5 @@
     flex-wrap: wrap;
 }
 .title {
-    margin-top: 70px;
-    flex-grow: 1;
+    background-color: #b2b2b2;
 }

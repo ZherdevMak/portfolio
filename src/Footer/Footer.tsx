@@ -6,7 +6,12 @@ const Footer = () => {
         <div className={stl.wrapper}>
             <div className={stl.container}>
                 <h2 className={stl.title} >Zherdev Maxim</h2>
-                <div className={stl.NavContainer}></div>
+                <div className={stl.NavContainer}>
+                    <div className={stl.NavElement}></div>
+                    <div className={stl.NavElement}></div>
+                    <div className={stl.NavElement}></div>
+                    <div className={stl.NavElement}></div>
+                </div>
                 <div className={stl.articleContainer}>
                     <article>@2022 All rights reserved</article>
                 </div>

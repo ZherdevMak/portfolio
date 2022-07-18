@@ -1,10 +1,11 @@
 import React from 'react';
 import stl from "./Skill.module.css";
+
 type SkillPropsType = {
     skillName: string
     discription: string
 }
-const Skill = (props:SkillPropsType) => {
+const Skill = (props: SkillPropsType) => {
     return (
         <div className={stl.container}>
             <div className={stl.icon}></div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import stl from './Main.module.css'
 import Skills from "../Skills/Skills";
-import Works from "../Works/Works";
+import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
 
 const Main = () => {
@@ -20,7 +20,7 @@ const Main = () => {
                 </div>
             </div>
             <Skills/>
-            <Works/>
+            <Projects/>
             <Contacts/>
         </div>
     )

@@ -13,6 +13,7 @@
     width: 80%;
     border: 1px solid;
 }
+
 .skillsContainer {
     width: 100%;
     margin-bottom: 40px;
@@ -24,6 +25,5 @@
 
 }
 .title {
-    margin-top: 70px;
-    flex-grow: 1;
+    background-color: #b2b2b2;
 }
