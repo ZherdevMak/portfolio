@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #c4fff0;
 }
 
@@ -12,6 +12,7 @@
     align-items: center;
     width: 80%;
     border: 1px solid;
+
 }
 .skillsContainer {
     width: 100%;
@@ -20,6 +21,7 @@
     justify-content: space-around;
     align-items: center;
     flex-grow: 2;
+    flex-wrap: wrap;
 }
 .title {
     margin-top: 70px;

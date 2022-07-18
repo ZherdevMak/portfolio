@@ -7,10 +7,12 @@
 
 .container {
     display: flex;
+    height: 100%;
     justify-content: space-around;
     align-items: center;
     width: 80%;
     border: 1px solid;
+    flex-wrap: wrap;
 }
 .text {
     width: 300px;
