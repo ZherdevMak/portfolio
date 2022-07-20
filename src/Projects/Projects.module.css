@@ -27,3 +27,8 @@
 .title {
     background-color: #b2b2b2;
 }
+@media screen and (max-width: 624px) {
+    .skillsContainer {
+        justify-content: center;
+    }
+}
