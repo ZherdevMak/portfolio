@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background-color: #c4fff0;
+    background-color: #fff;
 }
 
 .container {
@@ -26,6 +26,12 @@
 }
 .title {
     background-color: #b2b2b2;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.1;
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 @media screen and (max-width: 624px) {
     .skillsContainer {
