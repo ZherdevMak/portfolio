@@ -2,22 +2,63 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d0d0d0;
-    width: 250px;
-
+    background-color: #f7f7f7;
+    max-width: 500px;
 }
-.backgroundContainer {
+.imageContainer{
+    position: relative;
+    overflow: hidden;
+}
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../Components/Images/workImg.jpg');
-    background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 200px;
+    transition: all ease-in-out 0.4s;
+
 }
+
+.projectOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    background-color: black;
+    z-index: 10;
+}
+.imageContainer:hover .projectOverlay {
+    opacity: 0.5;
+}
+.imageContainer:hover .image {
+    transform: scale(1.1);
+}
+.projectInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
 .text {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 900;
+    border-bottom: 3px solid #fff;
+
 }
-.description{
-padding: 10px;
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
 }
