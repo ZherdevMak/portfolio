@@ -1,6 +1,6 @@
 import React from 'react';
-import stl from "./Project.module.css";
-import image from '../../Components/Images/comp.jpg'
+import stl from "./Project.module.scss";
+import image from '../../Assets/Images/comp.jpg'
 
 type WorkPropsType = {
     ProjectName: string
@@ -13,7 +13,7 @@ const Project = (props: WorkPropsType) => {
                 <div className={stl.projectOverlay}></div>
                 <img className={stl.image} src={image}/>
                 <div className={stl.projectInfo}>
-                <h3 className={stl.text}>{props.ProjectName}</h3>
+                    <h3 className={stl.text}>{props.ProjectName}</h3>
                 </div>
                 {/*<button>Explore</button>*/}
             </div>

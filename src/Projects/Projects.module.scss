@@ -1,0 +1,36 @@
+@import '../Common/Styles/Sass/variables';
+@import '../Common/Styles/Sass/mixins';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: $backgroundColor;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        border: 1px solid;
+        .title {
+            @include text($mainFont,60px,900,1.1);
+            text-transform: capitalize;
+            margin-top: 0;
+        }
+        .skillsContainer {
+            width: 100%;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: 2;
+            flex-wrap: wrap;
+            @media screen and (max-width: 624px) {
+                justify-content: center;
+            }
+
+        }
+    }
+}
+

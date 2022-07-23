@@ -1,0 +1,65 @@
+@import '../../Common/Styles/Sass/variables';
+@import '../../Common/Styles/Sass/mixins';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColor2;
+    max-width: 500px;
+    .imageContainer{
+        position: relative;
+        overflow: hidden;
+        &:hover .projectOverlay {
+            opacity: 0.5;
+        }
+        &:hover .image {
+            transform: scale(1.1);
+        }
+        .projectOverlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+            background-color: black;
+            z-index: 10;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            transition: all ease-in-out 0.4s;
+        }
+        .projectInfo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            .text {
+                @include text($mainFont,45px,900,1.3);
+                color: $imagesTextColor;
+                margin: 0;
+                text-transform: capitalize;
+                border-bottom: 3px solid $imagesTextColor;
+
+            }
+        }
+        .description {
+            @include text($mainFont,14px,400,32px);
+            padding: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
