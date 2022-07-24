@@ -1,3 +1,5 @@
+@import '../Common/Styles/Sass/variables.scss';
+
 .wraper {
     display: flex;
     justify-content: end;
@@ -15,5 +17,6 @@
 }
 
 .link {
+    color: $imagesTextColor;
     text-decoration: none;
 }
