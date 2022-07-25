@@ -1,5 +1,5 @@
 import React from 'react'
-import stl from './Header.module.css'
+import stl from './Header.module.scss'
 import Nav from "../Nav/Nav";
 
 const Header = () => {

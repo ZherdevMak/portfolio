@@ -1,22 +1,23 @@
 @import '../Common/Styles/Sass/variables.scss';
-
+@import '../Common/Styles/Sass/mixins';
 .wraper {
     display: flex;
     justify-content: end;
     align-items: center;
     width: 80%;
-
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        .link {
+            @include text($mainFont,16px,400,1.3);
+            color: $imagesTextColor;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+    }
 
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid;
-    width: 300px;
-}
 
-.link {
-    color: $imagesTextColor;
-    text-decoration: none;
-}
+
