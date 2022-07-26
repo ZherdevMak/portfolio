@@ -1,22 +1,28 @@
 import React from 'react';
-import stl from './Main.module.css'
+import stl from './Main.module.scss'
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
+import myPhoto from '../Assets/Images/myPhoto.jpg'
 
 const Main = () => {
     return (
         <div>
             <div className={stl.wrapper}>
                 <div className={stl.container}>
-                    <div className={stl.text}>
-                        <div>Hi,there!</div>
-                        <h1>I am Zherdev Maxim</h1>
-                        <div>a Web developer</div>
+                    <div className={stl.photoContainer}>
+                        <img className={stl.photo} src={myPhoto} alt="My photografy"/>
                     </div>
-                    <div className={stl.photo}>
+                    <div className={stl.textAboutMe}>
+                        <h3 className={stl.greeting}>HELLO, THAT'S ME!</h3>
+                        <h2 className={stl.nameText}>Zherdev Maxim.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur dolorem illum in
+                            quidem reprehenderit rerum, saepe vel voluptate voluptatum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aspernatur beatae
+                            cum debitis dolore, doloremque earum eius error eveniet impedit ipsum iure minima odio omnis
+                            pariatur, perferendis, quas quidem ratione repellat repellendus similique vel.</p>
+                    </div>
 
-                    </div>
                 </div>
             </div>
             <Skills/>
