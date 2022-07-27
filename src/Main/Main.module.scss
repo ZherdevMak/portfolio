@@ -30,6 +30,9 @@
             padding-right: 15px;
             padding-left: 15px;
             .greeting {
+                visibility: visible;
+                animation-delay: 0.4s;
+                animation-name: fadeInUp;
                 @include text($mainFont,12px,500,1.1);
                 color: #333;
                 margin-top: 20px;
@@ -41,7 +44,28 @@
                 text-transform: capitalize;
                 margin-bottom: 30px;
                 color: $textColor;
-
+            }
+            .infoText {
+                @include text($headerFont,16px,300,1.42);
+                line-height: 28px;
+                color: #333;
+            }
+            .socialLinksContainer {
+                margin-top: 40px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                .socialLinkButton {
+                    @include text($mainFont,12px,300,1.42);
+                    color: $imagesTextColor;
+                    background: #1B1B1B;
+                    padding: 8px 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    border: 1px solid #000;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
             }
         }
     }
