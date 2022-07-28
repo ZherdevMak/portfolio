@@ -1,0 +1,45 @@
+@import '../../Common/Styles/Sass/variables';
+@import '../../Common/Styles/Sass/mixins';
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColorBlack;
+    width: 300px;
+    min-height: 210px;
+    .icon {
+        display: flex;
+        justify-content: center;
+        height: 55px;
+        width: 180px;
+        background-color: $backgroundColorBlack;
+
+        .iconImage {
+            height: 55px;
+            max-width: 180px;
+        }
+
+    }
+    .text {
+        @include text($mainFont,30px,700,1.1);
+        text-align: center;
+        text-transform: capitalize;
+        margin: 40px 0;
+        -webkit-transition: .3s;
+        transition: .3s;
+        color: $imagesTextColor;
+        width: 300px;
+    }
+    .description{
+        @include text($headerFont,16px,300,28px);
+        color: #aeaeae;
+        margin: 0 0 10px;
+        width: 300px;
+        text-align: center;
+    }
+
+}
+
+
