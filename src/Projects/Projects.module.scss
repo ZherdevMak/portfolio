@@ -14,9 +14,9 @@
         width: 80%;
         border: 1px solid;
         .title {
-            @include text($mainFont,60px,900,1.1);
+            @include text($mainFont,80px,700,1.1);
             text-transform: capitalize;
-            margin-top: 0;
+            margin-top: 80px;
         }
         .skillsContainer {
             width: 100%;

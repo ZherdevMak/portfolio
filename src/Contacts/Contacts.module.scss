@@ -1,0 +1,116 @@
+@import '../Common/Styles/Sass/variables';
+@import '../Common/Styles/Sass/mixins';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #F7F7F7;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 1px solid;
+
+    .title {
+      @include text($mainFont, 80px, 700, 1.1);
+      margin-top: 80px;
+      color: #1b1b1b;
+      text-transform: capitalize;
+    }
+
+    .formContainer {
+      height: 90%;
+      width: 58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $backgroundColor2;
+      margin-bottom: 20px;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        width: 100%;
+        height: 100%;
+        background-color: $backgroundColor2;
+
+        .input {
+          padding: 15px 0;
+          width: 100%;
+          border: 0;
+          background-image: none;
+          border-radius: 0;
+          box-shadow: none;
+          border-bottom: 1px solid #000;
+          margin-bottom: 30px;
+          background-color: $backgroundColor2;
+          @include text($mainFont, 16px, 300, 0.2);
+          color: #555;
+          text-transform: capitalize;
+          &:focus  {
+            border-bottom: 1px solid #000;
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+        .textarea {
+          padding: 20px 0;
+          width: 100%;
+          border: 0;
+          line-height: 1.42857143;
+          background-image: none;
+          border-radius: 0;
+          box-shadow: none;
+          border-bottom: 1px solid #000;
+          //margin-bottom: 30px;
+          background-color: $backgroundColor2;
+          @include text($mainFont, 16px, 300, 1.42);
+          color: #555;
+          text-transform: capitalize;
+          height: max-content;
+          flex-grow: 10;
+          &:focus  {
+            border-bottom: 1px solid #000;
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .sendButton {
+      display: inline-block;
+      @include text($mainFont, 14px, 600, 1.1);
+      color: $imagesTextColor;
+      padding: 15px 35px;
+      text-transform: capitalize;
+      border: 1px solid #000;
+      background-color: #000;
+      width: 200px;
+      margin-bottom: 100px;
+
+      &:hover {
+        background: transparent;
+        color: #000;
+        border: 1px solid #aeaeae;
+        -webkit-transition: .3s;
+        transition: .3s;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .skillsContainer {
+    justify-content: center;
+  }
+}
