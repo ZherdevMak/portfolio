@@ -1,0 +1,53 @@
+@import '../Common/Styles/Sass/variables';
+@import '../Common/Styles/Sass/mixins';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $backgroundColorTotalBlack;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid;
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid;
+  height: 120px;
+}
+
+.title {
+  background-color: #b2b2b2;
+}
+
+.NavElement {
+  width: 20%;
+  height: 120px;
+  background-color: $backgroundColorTotalBlack;
+
+  .NavImage {
+    width: 25px;
+    height: 38px;
+  }
+  .NavImage2 {
+    width: 36px;
+    height: 38px;
+  }
+  .NavImage3 {
+    width: 40px;
+    height: 38px;
+  }
+}
+
+.articleContainer {
+  margin-bottom: 40px;
+}
