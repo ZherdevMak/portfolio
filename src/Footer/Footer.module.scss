@@ -5,98 +5,87 @@
   display: flex;
   justify-content: center;
   background-color: $backgroundColorTotalBlack;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 1px solid;
+    .NavContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      border: 1px solid;
+      //height: 120px;
+      .NavElement {
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        width: 20%;
+        //height: 120px;
+        background-color: $backgroundColorTotalBlack;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  border: 1px solid;
-}
+        .NavImage {
+          width: 25px;
+          height: 38px;
+        }
+        .NavImage2 {
+          width: 36px;
+          height: 38px;
+        }
+        .NavImage3 {
+          width: 40px;
+          height: 38px;
+        }
+        .NavText {
+          @include text($mainFont,14px,700,1.1);
+          margin-top: 40px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          color: #fff;
+          letter-spacing: 3px;
+        }
+        .NavDiscription {
+          @include text($headerFont,16px,300,1.1);
+          margin-bottom: 0;
+          color: $textColorGray;
+          line-height: 28px;
+          text-align: center;
+        }
+      }
 
-.NavContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  border: 1px solid;
-  //height: 120px;
-}
-
-.title {
-  background-color: #b2b2b2;
-}
-
-.NavElement {
-  display: flex;
-  flex-direction: column ;
-  align-items: center;
-  width: 20%;
-  //height: 120px;
-  background-color: $backgroundColorTotalBlack;
-
-  .NavImage {
-    width: 25px;
-    height: 38px;
+    }
+    .articleContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 70px;
+      border-top: 1px solid #484848;
+      padding-top: 50px;
+      margin-bottom: 40px;
+      .IconContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+        .mediaIcon {
+          width: 15px;
+          height: 15px;
+        }
+        .mediaIcon1 {
+          width: 10px;
+          height: 15px;
+        }
+      }
+      .articleText {
+        margin-top: 15px;
+        @include text($headerFont,14px,300,1.1);
+        color: $imagesTextColor;
+        text-align: center;
+      }
+    }
   }
-  .NavImage2 {
-    width: 36px;
-    height: 38px;
-  }
-  .NavImage3 {
-    width: 40px;
-    height: 38px;
-  }
-  .NavText {
-    @include text($mainFont,14px,700,1.1);
-    margin-top: 40px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 3px;
-  }
-  .NavDiscription {
-    @include text($headerFont,16px,300,1.1);
-    margin-bottom: 0;
-    color: $textColorGray;
-    line-height: 28px;
-    text-align: center;
-  }
-}
-
-.articleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 70px;
-  border-top: 1px solid #484848;
-  padding-top: 50px;
-  margin-bottom: 40px;
-}
-.IconContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 15%;
-}
-.mediaIcon {
-  width: 15px;
-  height: 15px;
-}
-.mediaIcon1 {
-  width: 10px;
-  height: 15px;
-}
-.articleText {
-  margin-top: 15px;
-  @include text($headerFont,14px,300,1.1);
-  color: $imagesTextColor;
-  text-align: center;
-}
-
-.articleBottomText {
-
 }

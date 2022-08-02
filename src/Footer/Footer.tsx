@@ -12,7 +12,6 @@ const Footer = () => {
     return (
         <div className={stl.wrapper}>
             <div className={stl.container}>
-                {/*<h2 className={stl.title} >Zherdev Maxim</h2>*/}
                 <div className={stl.NavContainer}>
                     <div className={stl.NavElement}>
                         <img className={stl.NavImage} src={mapMarker} alt="MapIcon"/>

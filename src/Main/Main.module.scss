@@ -65,6 +65,14 @@
                     border: 1px solid #000;
                     cursor: pointer;
                     margin-right: 10px;
+                    transition: all 0.2s;
+                    &:hover {
+                        border: 1px solid #000;
+                        background: #fff;
+                        color: #000;
+                        transition: all 0.2s;
+
+                    }
                 }
             }
         }
