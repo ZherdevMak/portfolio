@@ -2,7 +2,7 @@
 @import '../Common/Styles/Sass/mixins';
 .wraper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 80%;
     .container {
