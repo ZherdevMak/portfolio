@@ -15,7 +15,7 @@ const Main = () => {
                     </div>
                     <div className={stl.textAboutMe}>
                         <h3 className={stl.greeting}>HELLO, THAT'S ME!</h3>
-                        <h2 className={stl.nameText}>Zherdev Maxim.</h2>
+                        <h2 className={stl.nameText}>Zherdev <br/> Maxim.</h2>
                         <p className={stl.infoText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur dolorem illum in
                             quidem reprehenderit rerum, saepe vel voluptate voluptatum.</p>
                         <p className={stl.infoText}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet aspernatur beatae
@@ -23,8 +23,8 @@ const Main = () => {
                             pariatur, perferendis, quas quidem ratione repellat repellendus similique vel.</p>
                         <div className={stl.socialLinksContainer}>
                             <button className={stl.socialLinkButton}>Facebook</button>
-                            <button className={stl.socialLinkButton}>VK</button>
                             <button className={stl.socialLinkButton}>Instagram</button>
+                            <button className={stl.socialLinkButton}>VK</button>
                         </div>
                     </div>
 
