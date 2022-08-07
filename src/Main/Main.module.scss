@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    border: 1px solid;
+    //border: 1px solid;
     flex-wrap: wrap;
     @media (max-width: 991px) {
       width: 80%;
@@ -54,6 +54,7 @@
     }
 
     .textAboutMe {
+
       width: 45%;
       height: 80%;
       background-color: $backgroundColor;
@@ -75,12 +76,17 @@
         text-transform: uppercase;
         @media (max-width: 991px) {
           margin-top: 50px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 550px) {
+          margin-bottom: 30px;
         }
       }
 
       .nameText {
         @include text($mainFont, 100px, 700, 1.1);
         text-transform: capitalize;
+        margin-top: 0;
         margin-bottom: 30px;
         color: $textColor;
         @media screen and (max-width: 1050px) {
@@ -88,6 +94,7 @@
         }
         @media (max-width: 991px) {
           font-size: 100px;
+          margin-bottom: 20px;
         }
         @media (max-width: 767px) {
           font-size: 75px;
