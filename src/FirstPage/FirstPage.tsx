@@ -9,7 +9,7 @@ const BackImg = {
 const FirstPage = () => {
 
     return (
-        <div>
+        <div id={"home"}>
             <Header/>
             <div style={BackImg} className={stl.wrapper}>
                 <div className={stl.container}>

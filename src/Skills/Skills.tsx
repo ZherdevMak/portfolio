@@ -7,7 +7,7 @@ import cssLogo from '../Assets/Images/cssLogo.png'
 
 const Skills = () => {
     return (
-        <div className={stl.wrapper}>
+        <div id={'skills'} className={stl.wrapper}>
             <div className={stl.container}>
                 <h2 className={stl.title}>Skills.</h2>
                 <div className={stl.skillsContainer}>

@@ -3,7 +3,7 @@ import stl from "./Contacts.module.scss";
 
 const Contacts = () => {
     return (
-        <div className={stl.wrapper}>
+        <div id={'contacts'} className={stl.wrapper}>
             <div className={stl.container}>
                 <h2 className={stl.title}>say hello!</h2>
                 <div className={stl.formContainer}>

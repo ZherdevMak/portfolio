@@ -9,7 +9,7 @@ const Header = () => {
         setScroll(window.scrollY);
     };
 
-    const headerClass = (scroll < 350) ? stl.header : `${stl.header} + ${stl.minHeader}`
+    const headerClass = (scroll < 320) ? stl.header : `${stl.header} + ${stl.minHeader}`
 
     React.useEffect(() => {
         window.addEventListener("scroll", handleScroll);

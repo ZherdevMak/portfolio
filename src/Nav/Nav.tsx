@@ -1,14 +1,17 @@
 import React from 'react';
 import stl from './Nav.module.scss'
+import { Link} from "react-scroll";
+
 
 const Nav = () => {
     return (
         <div className={stl.wraper}>
             <div className={stl.container}>
-                <a className={stl.link} href="">Main</a>
-                <a className={stl.link} href="">Skills</a>
-                <a className={stl.link} href="">Works</a>
-                <a className={stl.link} href="">Contacts</a>
+                <Link className={stl.link}  to={'home'} smooth={true} duration={700}>Home</Link>
+                <Link className={stl.link} to={'main'} smooth={true} duration={700}>About</Link>
+                <Link className={stl.link}  to={'skills'} smooth={true} duration={700}>Skills</Link>
+                <Link className={stl.link}  to={'works'} smooth={true} duration={700}>Works</Link>
+                <Link className={stl.link}  to={'contacts'} smooth={true} duration={700}>Contacts</Link>
             </div>
         </div>
     )

@@ -5,6 +5,9 @@
     justify-content: flex-end;
     align-items: center;
     width: 80%;
+    @media (max-width: 550px) {
+        width: 97%;
+    }
     .container {
         display: flex;
         justify-content: space-between;

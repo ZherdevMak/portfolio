@@ -8,7 +8,7 @@ import myPhoto from '../Assets/Images/myPhoto.jpg'
 const Main = () => {
     return (
         <div>
-            <div className={stl.wrapper}>
+            <div id={"main"} className={stl.wrapper}>
                 <div className={stl.container}>
                     <div className={stl.photoContainer}>
                         <img className={stl.photo} src={myPhoto} alt="My photografy"/>

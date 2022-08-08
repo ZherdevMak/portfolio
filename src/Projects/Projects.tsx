@@ -4,7 +4,7 @@ import Project from "./Project/Project";
 
 export const Projects = () => {
     return (
-        <div className={stl.wrapper}>
+        <div id={'works'} className={stl.wrapper}>
             <div className={stl.container}>
                 <h2 className={stl.title}>Projects</h2>
                 <div className={stl.skillsContainer}>
