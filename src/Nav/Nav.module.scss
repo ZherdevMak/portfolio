@@ -7,6 +7,7 @@
     width: 80%;
     @media (max-width: 550px) {
         width: 97%;
+        justify-content: center;
     }
     .container {
         display: flex;
@@ -17,6 +18,7 @@
             color: $imagesTextColor;
             text-transform: capitalize;
             text-decoration: none;
+            cursor: pointer;
         }
     }
 
