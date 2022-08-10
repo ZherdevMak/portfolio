@@ -36,9 +36,9 @@ const Footer = () => {
                 </div>
                 <div className={stl.articleContainer}>
                     <div className={stl.IconContainer}>
-                        <img className={stl.mediaIcon1} src={facebookIcon} alt=""/>
-                        <img className={stl.mediaIcon} src={vkIcon} alt=""/>
-                        <img className={stl.mediaIcon} src={instaIcon} alt=""/>
+                        <a href={'https://www.facebook.com/ppmaxjer'}><img className={stl.mediaIcon1} src={facebookIcon} alt=""/></a>
+                        <a href={'https://vk.com/id146583412'}><img className={stl.mediaIcon} src={vkIcon} alt=""/></a>
+                        <a href={'https://www.instagram.com/ppmaxjer'}><img className={stl.mediaIcon} src={instaIcon} alt=""/></a>
                     </div>
                     <article className={stl.articleText}>@2022 All rights reserved</article>
                 </div>
