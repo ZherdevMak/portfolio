@@ -22,9 +22,9 @@ const Main = () => {
                             cum debitis dolore, doloremque earum eius error eveniet impedit ipsum iure minima odio omnis
                             pariatur, perferendis, quas quidem ratione repellat repellendus similique vel.</p>
                         <div className={stl.socialLinksContainer}>
-                            <button className={stl.socialLinkButton}>Facebook</button>
-                            <button className={stl.socialLinkButton}>Instagram</button>
-                            <button className={stl.socialLinkButton}>VK</button>
+                            <a href={'https://www.facebook.com/ppmaxjer'} className={stl.socialLinkButton}>Facebook</a>
+                            <a href={'https://www.instagram.com/ppmaxjer'} className={stl.socialLinkButton}>Instagram</a>
+                            <a href={'https://vk.com/id146583412'} className={stl.socialLinkButton}>VK</a>
                         </div>
                     </div>
 
