@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className={stl.NavElement}>
                         <img className={stl.NavImage2} src={mobileMarker} alt="MobileIcon"/>
                         <h2 className={stl.NavText}>Call me</h2>
-                        <p className={stl.NavDiscription}>+79689471982</p>
+                        <a className={stl.NavDiscription} href={'tel:+79689471982'}>+79689471982</a>
                     </div>
                     <div className={stl.NavElement}>
                         <img className={stl.NavImage3} src={wrenchMarker} alt="WrenchIcon"/>
@@ -30,8 +30,8 @@ const Footer = () => {
                     </div>
                     <div className={stl.NavElement}>
                         <img className={stl.NavImage3} src={letterMarker} alt="MailIcon"/>
-                        <h2 className={stl.NavText}>Email me</h2>
-                        <p className={stl.NavDiscription}>ppmaxjer@yandex.ru</p>
+                        <h2 className={stl.NavText} >Email me</h2>
+                        <a className={stl.NavDiscription} href={'mailto:ppmaxjer@yandex.ru'}>ppmaxjer@yandex.ru</a>
                     </div>
                 </div>
                 <div className={stl.articleContainer}>
