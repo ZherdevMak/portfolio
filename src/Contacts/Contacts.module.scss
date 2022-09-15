@@ -31,7 +31,8 @@
 
     .formContainer {
       height: 90%;
-      width: 58%;
+      width: 100%;
+      max-width: 500px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
