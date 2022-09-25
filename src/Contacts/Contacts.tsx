@@ -39,7 +39,7 @@ const Contacts = () => {
                 <div className={stl.formContainer}>
                     <form className={stl.form} onSubmit={formik.handleSubmit}>
                         <input className={stl.input} type="text" placeholder={"Your name"}/>
-                        <input className={stl.input} type="text" placeholder={"Your email"}/>
+                        <input className={stl.input} type="text" placeholder={"Your e-mail"}/>
                         <input className={stl.input} type="text" placeholder={"Your subject"}/>
                         <textarea className={stl.textarea} placeholder={"Your message"}/>
                         <button type={'submit'} className={stl.sendButton}>Send message</button>
