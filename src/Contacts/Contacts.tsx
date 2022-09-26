@@ -1,8 +1,9 @@
 import React from 'react';
 import stl from "./Contacts.module.scss";
 import {useFormik} from "formik";
+import {emailSend} from "../Api/emailApi";
 
-type FormikErrorType = {
+export type FormikErrorType = {
   name?: string,
   email?: string,
   subject?: string,
@@ -31,6 +32,8 @@ const Contacts = () => {
       return errors
     },
     onSubmit: (values) => {
+      emailSend(values)
+
       formik.resetForm()
     },
   })
