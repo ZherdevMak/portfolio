@@ -45,7 +45,7 @@ const Contacts = () => {
         <h2 className={stl.title}>say hello!</h2>
         <div className={stl.formContainer}>
           <form className={stl.form} onSubmit={formik.handleSubmit}>
-            <input className={stl.input} type="text" placeholder={"Your name"}
+            <input className={stl.input} style={{textTransform: 'capitalize'}} type="text" placeholder={"Your name"}
                    name='name'
                    onChange={formik.handleChange}
                    value={formik.values.name}
